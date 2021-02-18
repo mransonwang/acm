@@ -12,14 +12,3 @@ spec:
         - containerPort: 8080
           name: hello
           protocol: TCP
-kind: Service
-metadata:
-  name: springboot-helloworld
-spec:
-  selector:
-    app: springboot-helloworld
-  ports:
-    - protocol: TCP
-      port: 80
-      targetPort: 8080
-
